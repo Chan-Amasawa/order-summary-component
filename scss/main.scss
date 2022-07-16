@@ -1,0 +1,95 @@
+//external npm link
+@import url(../node_modules/bootstrap/dist/css/bootstrap.min.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;0,700;0,900;1,300&display=swap');
+
+//custom css
+body{
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(215deg 62% 92%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+.card_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.card-img-top{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card{
+    height: 65%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 25rem !important;
+    box-shadow: rgb(17 12 46 / 15%) 0px 48px 100px 0px;
+}
+.anual-plan-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+.plan-container{
+    display: flex;
+    justify-content: flex-start ;
+    align-items: center;
+}
+.card-body{
+    padding: 35px;
+}
+.card-title{
+    text-align: center;
+    font-size: x-large;
+    font-weight: 900;
+}
+.card-text{
+    padding: 15px;
+    text-align: center;
+    opacity: 0.8;
+    margin: 0;
+}
+.price-container{
+    margin-left: 16px;
+}
+.plan-text{
+    font-size: large;
+    font-weight: bold;
+}
+.price-text{
+    font-size: large;
+    opacity: .6;
+}
+.plan-btn{
+    color: #382ae1;
+    font-weight: bold;
+}
+.payment-btn{
+    margin-top: 30px;
+    background-color: #382ae3;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: rgb(0 0 0 / 25%) 0px 10px 36px 0px, rgb(0 0 0) 0px 0px 0px 1px;
+}
+.cancel-btn{
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    font-weight: bold;
+    opacity: 0.6;
+}
+
+//mobile-view
+@media screen and (max-width: 768px){
+    body{
+        background-image: none;
+    }
+}
+
